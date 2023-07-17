@@ -3,4 +3,35 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --black-color: #181823;
+    --details-color: #FC7300;
+    --background-primary: #EFF5F5;
+    --background-secondary: #1F8A70;
+    --suplement-color: #00425A; 
+}
+
+
+
+
+header{
+    background-color: var(--background-secondary);
+    text-align: center;
+}
+
+header nav a{
+    color: var(--background-primary);
+}
+
+
+header .barraNavegacion ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
 }
