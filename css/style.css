@@ -16,18 +16,24 @@
 
 
 
+/* CARAC HEADER */
 
+
+/* Disposición y color de fondo */
 header{
     background-color: var(--background-secondary);
     text-align: center;
 }
 
-header nav a{
+
+/* Color blanco */
+nav a{
     color: var(--background-primary);
 }
 
 
-header .barraNavegacion ul{
+/* Display */
+.barraNavegacion ul{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -35,3 +41,88 @@ header .barraNavegacion ul{
     justify-content: center;
     list-style: none;
 }
+
+
+
+/* MAIN */
+
+
+/* Disposición y carac. del fondo */
+main .encabezado{
+    background-image: url(/img/imagen-fondo2.jpg);
+    height: 30rem;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--background-primary);
+}
+
+
+/* BOTON CONSULTA */
+.encabezado a{
+    color: var(--background-primary);
+    background-color: var(--background-secondary);
+    display: inline-block;
+}
+
+
+/* SECCIÓN QUIENES SOMOS */
+#quienesSomos div:first-child{
+    background-image: url(/img/quienes-somos2.jpg);
+    height: 25rem;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* decoración TÍTULO */
+#quienesSomos div h2{
+    color: var(--background-primary);
+    text-decoration: overline;
+}
+
+
+/* Padding */
+#quienesSomos div:last-child{
+    padding-left: 5px;
+    padding-bottom: 20px;
+}
+
+#quienesSomos div:last-child h3{
+    padding-top: 15px;
+}
+
+#quienesSomos div:last-child p{
+    padding-top: 9px;
+}
+
+
+/* Dispoisición info del equipo */
+#quienesSomos div:last-child .equipo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Características de la imágen de equipo */
+#quienesSomos div:last-child .equipo article img{
+    padding-top: 30px;
+    height: 20rem;
+    border-radius: 100%;
+}
+
+
+/*  */
