@@ -23,7 +23,19 @@
 header{
     background-color: var(--background-secondary);
     text-align: center;
+    padding: 20px;
 }
+
+
+/* Display del logotipo */
+.logotipo i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
 
 
 /* Color blanco */
@@ -43,6 +55,20 @@ nav a{
 }
 
 
+/* Borde */
+.barraNavegacion ul li{
+    border: 1px solid var(--background-primary);
+    padding: 2px;
+}
+
+
+/* Padding de la lista */
+.barraNavegacion ul li a{
+    padding: 10px;
+    font-weight: 600;
+}
+
+
 
 /* MAIN */
 
@@ -50,13 +76,12 @@ nav a{
 /* Disposición y carac. del fondo */
 main .encabezado{
     background-image: url(/img/imagen-fondo.jpg);
-    height: 30rem;
+    height: 38rem;
     text-align: center;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     color: var(--background-primary);
@@ -68,10 +93,17 @@ main .encabezado{
     color: var(--background-primary);
     background-color: var(--background-secondary);
     display: inline-block;
+    font-size: 22px;
+    padding: 8px;
+    border-radius: 10%;
 }
 
 
+
 /* SECCIÓN QUIENES SOMOS */
+
+
+/* Disposición y fondo img */
 #quienesSomos div:first-child{
     background-image: url(/img/quienes-somos.jpg);
     height: 25rem;
@@ -97,17 +129,22 @@ main .encabezado{
     padding-bottom: 20px;
 }
 
-#quienesSomos div:last-child h3{
-    padding-top: 15px;
-}
-
-#quienesSomos div:last-child p{
+.equipo p{
     padding-top: 9px;
 }
 
 
+/* Decoración subtítulos - "QUIENES SOMOS" y "¿POR QUÉ ELEGIRNOS?"*/
+#quienesSomos h3, #elegirnos h3{
+    padding-top: 20px;
+    color: var(--background-secondary);
+    text-decoration: overline;
+    
+}
+
+
 /* Dispoisición info del equipo */
-#quienesSomos div:last-child .equipo{
+.equipo{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -118,17 +155,25 @@ main .encabezado{
 
 
 /* Características de la imágen de equipo */
-#quienesSomos div:last-child .equipo article img{
+.equipo article img{
     padding-top: 30px;
     height: 20rem;
     border-radius: 100%;
 }
 
 
+/* Decoración de puesto */
+.equipo p:last-child{
+    color: var(--background-secondary);
+    font-weight: 600;
+}
+
+
+
 /* SECCIÓN "¿POR QUÉ ELEGIRNOS?" */
 
 
-/*  */
+/* Disposición y fondo img */
 #elegirnos div .porqueElegirnos{
     background-image: url(/img/porque-elegirnos.jpg);
     height: 20rem;
@@ -155,10 +200,6 @@ main .encabezado{
     padding-bottom: 20px;
 }
 
-#elegirnos div h3{
-    padding-top: 15px;
-}
-
 #elegirnos div p{
     padding-top: 9px;
 }
@@ -168,26 +209,43 @@ main .encabezado{
 /* SECCIÓN "PROPUESTA EDUCATIVA" */
 
 
+/* Color texto*/
+#propuestaEducativa, #propuestaEducativa a{
+    color: var(--background-secondary);
+}
+/* Alinear texto al medio */
 #propuestaEducativa{
     text-align: center;
 }
-  
 
+
+/* Carac. título */
+#propuestaEducativa h2{
+    text-decoration: overline;
+    padding-bottom: 16px;
+}
+
+
+/* Disposición de imágenes */
 .propuestas{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding-bottom: 20px;
 }
   
 
+/* Forma hexágono */
 .hexagonContainer{
     width: 150px;
     height: 150px; 
     overflow: hidden;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-  
+
+
+/* Mantienen la forma de la imágen */
 img{
     width: 100%;
     height: 100%;
@@ -195,10 +253,13 @@ img{
 }
   
 
+/* Alineamiento de las propuestas */
 .propuesta{
     flex: 0 0 150px;
 }
-  
+
+
+/* margen de los títulos */
 .propuesta h3{
     margin-top: 10px;
 }
@@ -206,21 +267,153 @@ img{
 
 
 /* SECCIÓN "NOVEDADES" */
-#noticias{
+
+
+/* Carac. título */
+#novedades h2{
+    color: var(--background-primary);
+    text-align: center;
+    border: 1px solid var(--background-primary);
+}
+/* Color de fondo */
+#novedades{
     background-color: var(--suplement-color);
 }
 
-#noticias .novedades{
+
+/* Display novedades */
+#novedades .novedades{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
 }
 
-#noticias h3{
+
+/* Color de títulos: artículos */
+#novedades h3{
     color: var(--background-primary);
 }
 
-#noticias div{
+
+/* Anchura de título */
+#novedades span{
+    font-weight: 100;
+}
+
+
+/* padding costados*/
+#novedades div{
     padding: 10px;
+}
+
+
+/* Disposición del contenedor artículos */
+.novedad{
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+
+/* Ocupación imágenes */
+img{
+    width: 100%;
+    display: block;
+}
+
+
+/* Cartelito de la fecha */
+.date{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(24, 24, 35, 0.7);
+    color: var(--background-primary);
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+
+/* FOOTER */
+
+
+/* Display, alineamiento, padding */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+}
+
+
+/* Distribución, alineamiento */
+footer section{
+    flex: 1;
+    margin:0 10px;
+    text-align: center;
+}
+
+
+/* padding */
+footer section div{
+    padding-top: 10px;
+}
+
+
+/* Carac. títulos */
+footer h3{
+    margin: 0;
+    padding: 10px 0;
+    color: var(--background-secondary);
+}
+
+
+/* Display íconos "Redes Sociales" */
+#redesSociales{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+/* Color/tamaño íconos */
+.redes{
+    width: 50px;
+    fill:var(--background-secondary)
+}
+
+
+/* Ocupamiento de Maps */
+#ubicacion iframe{
+    width:100%;
+    height:200px;
+    border: none;
+}
+
+
+/* Display "Contacto" */
+#contactos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--background-secondary);
+}
+
+
+/* Color de íconos "Contacto" */
+.contacto{
+    width: 20px;
+    fill: var(--background-secondary);
+}
+
+
+/* Color de enlaces */
+footer a{
+    color: var(--background-secondary);
 }
