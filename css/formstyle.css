@@ -1,0 +1,232 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --black-color: #181823;
+    --details-color: #FC7300;
+    --background-primary: #EFF5F5;
+    --background-secondary: #1F8A70;
+    --suplement-color: #00425A; 
+}
+
+
+
+/* CARAC HEADER */
+
+
+/* Disposición y color de fondo */
+header{
+    background-color: var(--background-secondary);
+    text-align: center;
+    padding: 16px;
+}
+
+
+/* Display del logotipo */
+.logotipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+
+/* Resaltado cursor por encima */
+.barraNavegacion li:hover {
+    border: 0;
+    background-color: var(--details-color);
+    transition: all 0.4s;
+}
+
+
+
+/* Tamaño de la imagen */
+.logotipo img{
+    max-width: 100%;
+}
+
+/* Color blanco */
+nav a{
+    color: var(--background-primary);
+}
+
+
+/* Display */
+.barraNavegacion ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+}
+
+
+/* Borde */
+.barraNavegacion ul li{
+    border: 1px solid var(--background-primary);
+    padding: 2px;
+}
+
+
+/* Padding de la lista */
+.barraNavegacion ul li a{
+    padding: 10px;
+    font-weight: 600;
+}
+
+
+
+/* MAIN */
+
+
+/* Padding */
+main{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* Display elementos */
+main .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px;
+    gap: 7rem;
+}
+
+.info div{
+    display: flex;
+    flex-direction: column;
+}
+
+.info .contentInfo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.info .titleInfo{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Color y tamaño de los iconos */
+.iconosInfo{
+    fill: var(--background-secondary);
+    width: 1.3rem;
+    margin: 3px;
+}
+
+
+/* Color de las letras */
+.info{
+    color: var(--background-secondary);
+}
+
+
+
+/* FOOTER */
+
+
+/* Display, alineamiento, padding */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+}
+
+
+/* Distribución, alineamiento */
+footer section{
+    flex: 1;
+    margin:0 10px;
+    text-align: center;
+}
+
+
+/* padding */
+footer section div{
+    padding-top: 10px;
+}
+
+
+/* Carac. títulos */
+footer h3{
+    margin: 0;
+    padding: 10px 0;
+    color: var(--background-secondary);
+}
+
+
+/* Display íconos "Redes Sociales" */
+#redesSociales{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+/* Color/tamaño íconos */
+.redes{
+    width: 50px;
+    fill:var(--background-secondary)
+}
+
+
+/* Resaltado de íconos */
+.redes:hover{
+    fill: var(--details-color);
+    width: 60px;
+    transition: all 0.6s;
+}
+
+
+/* Ocupamiento de Maps */
+#ubicacion iframe{
+    width:100%;
+    height:200px;
+    border: none;
+}
+
+
+/* Display y tamaño letra de "Contacto" */
+#contactos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--background-secondary);
+    font-size: 1.1rem;
+}
+
+
+/* Color de íconos "Contacto" */
+.contacto{
+    width: 1.2rem;
+    fill: var(--background-secondary);
+}
+
+
+/* Color de enlaces */
+footer a{
+    color: var(--background-secondary);
+}
+
+
+/* Resaltado de link en "Enviar correo" */
+footer a:hover{
+    color: var(--details-color);
+    transition: all 0.3s;
+}

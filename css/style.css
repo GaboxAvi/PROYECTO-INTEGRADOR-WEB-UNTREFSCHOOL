@@ -6,6 +6,7 @@
     text-decoration: none;
 }
 
+
 :root{
     --black-color: #181823;
     --details-color: #FC7300;
@@ -21,21 +22,32 @@
 
 /* Disposición y color de fondo */
 header{
-    background-color: var(--background-secondary);
+    margin: 5px;
+    background-color: rgba(31, 138, 112, 0.9);
     text-align: center;
-    padding: 20px;
+    padding: 16px;
+    position: fixed;
+    z-index: 999;
 }
 
 
 /* Display del logotipo */
-.logotipo i {
+.logotipo{
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 60%;
     margin: 0 auto;
     padding-bottom: 20px;
-  }
+}
+
+
+/* Resaltado cursor por encima */
+.barraNavegacion li:hover {
+    border: 0;
+    background-color: var(--details-color);
+    transition: all 0.3s;
+}
 
 
 /* Color blanco */
@@ -76,7 +88,7 @@ nav a{
 /* Disposición y carac. del fondo */
 main .encabezado{
     background-image: url(/img/imagen-fondo.jpg);
-    height: 38rem;
+    height: 50rem;
     text-align: center;
     background-position: center;
     background-size: cover;
@@ -99,6 +111,13 @@ main .encabezado{
 }
 
 
+/* Resaltado del cursor por encima */
+.encabezado a:hover{
+    background-color: var(--details-color);
+    transition: all 0.3s;
+}
+
+
 
 /* SECCIÓN QUIENES SOMOS */
 
@@ -106,7 +125,7 @@ main .encabezado{
 /* Disposición y fondo img */
 #quienesSomos div:first-child{
     background-image: url(/img/quienes-somos.jpg);
-    height: 25rem;
+    height: 27rem;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -176,7 +195,7 @@ main .encabezado{
 /* Disposición y fondo img */
 #elegirnos div .porqueElegirnos{
     background-image: url(/img/porque-elegirnos.jpg);
-    height: 20rem;
+    height: 27rem;
     background-position: center;
     background-size: cover;
     background-position: center;
@@ -213,16 +232,19 @@ main .encabezado{
 #propuestaEducativa, #propuestaEducativa a{
     color: var(--background-secondary);
 }
+
+
 /* Alinear texto al medio */
 #propuestaEducativa{
     text-align: center;
+    margin: 20px;
 }
 
 
 /* Carac. título */
 #propuestaEducativa h2{
     text-decoration: overline;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
 }
 
 
@@ -246,10 +268,23 @@ main .encabezado{
 
 
 /* Mantienen la forma de la imágen */
-img{
+#propuestaEducativa img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: grayscale(1);
+}
+
+
+/* Resaltado del cursor hover */
+#propuestaEducativa img:hover{
+    filter: grayscale(0);
+    transform: scale(2);
+    transition: all 0.6s;
+}
+
+#propuestaEducativa h3:hover{
+    color: var(--details-color);
 }
   
 
@@ -275,6 +310,8 @@ img{
     text-align: center;
     border: 1px solid var(--background-primary);
 }
+
+
 /* Color de fondo */
 #novedades{
     background-color: var(--suplement-color);
@@ -293,6 +330,7 @@ img{
 /* Color de títulos: artículos */
 #novedades h3{
     color: var(--background-primary);
+    padding-top: 10px;
 }
 
 
@@ -313,7 +351,15 @@ img{
     position: relative;
     max-width: 600px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
+}
+
+
+/* Salida de img cursor hover */
+.novedad img:hover{
+    transform: scale(0.9);
+    filter: grayscale(0.5);
+    transition: all 0.6s;
 }
 
 
@@ -334,6 +380,7 @@ img{
     padding: 5px 10px;
     font-size: 14px;
     border-radius: 5px;
+    z-index: 998;
 }
 
 
@@ -389,6 +436,14 @@ footer h3{
 }
 
 
+/* Resaltado de íconos */
+.redes:hover{
+    fill: var(--details-color);
+    width: 60px;
+    transition: all 0.6s;
+}
+
+
 /* Ocupamiento de Maps */
 #ubicacion iframe{
     width:100%;
@@ -397,12 +452,13 @@ footer h3{
 }
 
 
-/* Display "Contacto" */
+/* Display y tamaño letra de "Contacto" */
 #contactos{
     display: flex;
     flex-direction: column;
     gap: 15px;
     color: var(--background-secondary);
+    font-size: 1.1rem;
 }
 
 
@@ -416,4 +472,11 @@ footer h3{
 /* Color de enlaces */
 footer a{
     color: var(--background-secondary);
+}
+
+
+/* Resaltado de link en "Enviar correo" */
+footer a:hover{
+    color: var(--details-color);
+    transition: all 0.3s
 }
