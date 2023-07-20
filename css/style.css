@@ -1,6 +1,6 @@
 *{
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -8,10 +8,10 @@
 
 
 :root{
-    --black-color: #181823;
-    --details-color: #FC7300;
     --background-primary: #EFF5F5;
     --background-secondary: #1F8A70;
+    --black-color: #181823;
+    --details-color: #FC7300;
     --suplement-color: #00425A; 
 }
 
@@ -22,11 +22,11 @@
 
 /* Disposición y color de fondo */
 header{
-    margin: 5px;
     background-color: rgba(31, 138, 112, 0.9);
-    text-align: center;
+    margin: 5px;
     padding: 16px;
     position: fixed;
+    text-align: center;
     z-index: 999;
 }
 
@@ -36,17 +36,18 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 60%;
     margin: 0 auto;
+    max-width: 60%;
     padding-bottom: 20px;
 }
 
 
 /* Resaltado cursor por encima */
 .barraNavegacion li:hover {
-    border: 0;
     background-color: var(--details-color);
-    transition: all 0.3s;
+    border: 0;
+    padding: 2px;
+    transition: all 0.4s;
 }
 
 
@@ -76,8 +77,8 @@ nav a{
 
 /* Padding de la lista */
 .barraNavegacion ul li a{
-    padding: 10px;
     font-weight: 600;
+    padding: 10px;
 }
 
 
@@ -87,7 +88,7 @@ nav a{
 
 /* Disposición y carac. del fondo */
 main .encabezado{
-    background-image: url(/img/imagen-fondo.jpg);
+    background-image: url(/img/backgrounds/imagen-fondo.jpg);
     height: 50rem;
     text-align: center;
     background-position: center;
@@ -124,14 +125,14 @@ main .encabezado{
 
 /* Disposición y fondo img */
 #quienesSomos div:first-child{
-    background-image: url(/img/quienes-somos.jpg);
-    height: 27rem;
+    background-image: url(/img/backgrounds/quienes-somos.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 27rem;
 }
 
 
@@ -144,8 +145,7 @@ main .encabezado{
 
 /* Padding */
 #quienesSomos div:last-child{
-    padding-left: 5px;
-    padding-bottom: 20px;
+    padding: 0 0 20px 5px;
 }
 
 .equipo p{
@@ -155,8 +155,8 @@ main .encabezado{
 
 /* Decoración subtítulos - "QUIENES SOMOS" y "¿POR QUÉ ELEGIRNOS?"*/
 #quienesSomos h3, #elegirnos h3{
-    padding-top: 20px;
     color: var(--background-secondary);
+    padding-top: 20px;
     text-decoration: overline;
     
 }
@@ -175,9 +175,9 @@ main .encabezado{
 
 /* Características de la imágen de equipo */
 .equipo article img{
-    padding-top: 30px;
-    height: 18rem;
     border-radius: 100%;
+    height: 18rem;
+    padding-top: 30px;
 }
 
 
@@ -194,15 +194,13 @@ main .encabezado{
 
 /* Disposición y fondo img */
 #elegirnos div .porqueElegirnos{
-    background-image: url(/img/porque-elegirnos.jpg);
-    height: 27rem;
-    background-position: center;
-    background-size: cover;
+    background-image: url(/img/backgrounds/porque-elegirnos.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 27rem;
 }
 
 
@@ -215,8 +213,7 @@ main .encabezado{
 
 /* PADDING */
 #elegirnos div:nth-child(2){
-    padding-left: 5px;
-    padding-bottom: 20px;
+    padding: 0 0 20px 5px;
 }
 
 #elegirnos div p{
@@ -236,8 +233,8 @@ main .encabezado{
 
 /* Alinear texto al medio */
 #propuestaEducativa{
-    text-align: center;
     margin: 20px;
+    text-align: center;
 }
 
 
@@ -260,26 +257,26 @@ main .encabezado{
 
 /* Forma hexágono */
 .hexagonContainer{
-    width: 150px;
-    height: 150px; 
-    overflow: hidden;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    height: 150px;
+    overflow: hidden;
+    width: 150px;
 }
 
 
 /* Mantienen la forma de la imágen */
 #propuestaEducativa img{
-    width: 100%;
+    filter: grayscale(1);
     height: 100%;
     object-fit: cover;
-    filter: grayscale(1);
+    width: 100%;
 }
 
 
 /* Resaltado del cursor hover */
 #propuestaEducativa img:hover{
     filter: grayscale(0);
-    transform: scale(2);
+    transform: scale(1.2);
     transition: all 0.6s;
 }
 
@@ -306,9 +303,9 @@ main .encabezado{
 
 /* Carac. título */
 #novedades h2{
+    border: 1px solid var(--background-primary);
     color: var(--background-primary);
     text-align: center;
-    border: 1px solid var(--background-primary);
 }
 
 
@@ -348,37 +345,37 @@ main .encabezado{
 
 /* Disposición del contenedor artículos */
 .novedad{
-    position: relative;
     margin: 0 auto;
     padding-bottom: 35px;
+    position: relative;
 }
 
 
 /* Salida de img cursor hover */
 .novedad:hover{
     text-decoration: underline var(--background-primary);
-    filter: grayscale(0.8);
-    transition: all 0.6s;
+    transform: scale(0.9);
+    transition: all 1s;
 }
 
 
 /* Ocupación imágenes */
 img{
-    width: 100%;
     display: block;
+    width: 100%;
 }
 
 
 /* Cartelito de la fecha */
 .date{
+    background-color: rgba(24, 24, 35, 0.7);
+    border-radius: 5px;
+    color: var(--background-primary);
+    font-size: 14px;
+    padding: 5px 10px;
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: rgba(24, 24, 35, 0.7);
-    color: var(--background-primary);
-    padding: 5px 10px;
-    font-size: 14px;
-    border-radius: 5px;
     z-index: 998;
 }
 
@@ -392,24 +389,24 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 20px;
     gap: 30px;
+    padding: 20px;
 }
 
 
 /* Distribución, alineamiento */
 footer section{
-    flex: 1;
     margin:0 10px;
+    flex: 1;
     text-align: center;
 }
 
 
 /* Carac. títulos */
 .titulo{
+    color: var(--background-secondary);
     margin: 0;
     padding: 10px 0;
-    color: var(--background-secondary);
 }
 
 
@@ -424,8 +421,8 @@ footer section{
 
 /* Color/tamaño íconos */
 .redes{
+    fill:var(--background-secondary);
     width: 50px;
-    fill:var(--background-secondary)
 }
 
 
@@ -439,27 +436,28 @@ footer section{
 
 /* Ocupamiento de Maps */
 #ubicacion iframe{
-    padding-top: 15px;
-    width:100%;
-    height:200px;
     border: none;
+    height: 200px;
+    padding-top: 15px;
+    width: 100%;
 }
+
 
 
 /* Display y tamaño letra de "Contacto" */
 #contactos{
+    color: var(--background-secondary);
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    color: var(--background-secondary);
     font-size: 1.1rem;
+    gap: 15px;
 }
 
 
 /* Color de íconos "Contacto" */
 .contacto{
-    width: 20px;
     fill: var(--background-secondary);
+    width: 1.2rem;
 }
 
 
@@ -479,68 +477,66 @@ footer a:hover{
 
 @media (min-width: 768px) {
     
-    /* Display sección novedades */
-#novedades .novedades{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    flex-direction: row;
-    justify-content: space-around;
-}
+/* Display sección novedades */
+    #novedades .novedades{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
 
 
 /* Tamaño de novedad */
-.novedad{
-    max-width: 30%;
-}
+    .novedad{
+        max-width: 30%;
+    }
 
 
 /* Tamaño título */
-.novedad h3{
-    font-size: 1.1rem;
-}
+    .novedad h3{
+        font-size: 1.1rem;
+    }
 
 /* padding footer */
-.titulo{
-    padding-bottom: 20px;
-}
-
+    .titulo{
+        padding-bottom: 20px;
+    }
 
 /* Display íconos sección "Redes Sociales" */
-#redesSociales{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 30px;
-}
-
+    #redesSociales{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 30px;
+    }
 
 /* padding footer ubicación */
-#ubicacion iframe{
-    padding-top: 0;
-}
+    #ubicacion iframe{
+        padding-top: 0;
+    }
+
 
 
 /* Alineación de contenido footer */
-.contenidoFooter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-}
+    .contenidoFooter{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 
 
 /* Display de "CONTACTO" */
-.contenidoFooter:last-child div{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
+    .contenidoFooter:last-child div{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
 
 
 /* Espacio entre sus elementos */
-#contactos{
-    padding-top: 20px;
-    padding: 10px;
-}
+    #contactos{
+        padding: 20px 10px;
+    }
 }
