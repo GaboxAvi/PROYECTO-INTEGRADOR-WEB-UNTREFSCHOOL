@@ -1,0 +1,15 @@
+# PROYECTO-INTEGRADOR-WEB-UNTREFSCHOOL
+Trabajo integrador 1 realizado para el curso "Desarrollador Frontend" de Argentina Programa 4.0 (UNTREF)
+
+Este es mi primer trabajo realizado aplicando en conjunto lo poco que sé verdaderamente de la programación! Fue muy divertido y a la vez un poco estresante (en el buen sentido). Tener que diseñar desde 0 una página y probar que cada cosa estuviese en su lugar e imaginar que era un encargo para una persona, fue algo bastante novedoso para mi.
+
+No aproveché el plazo de realización en un principio, comencé unos días después por ciertas complicaciones personales, pero aún así traté de dar lo mejor de mi en realizar este trabajo. Traté de ser organizado con el orden de los elementos, de utilizar selectores directos, ahorrar líneas, etc. (espero se note). A la par que volvía a ver ciertas cosas de las clases pasadas; utilizando los recursos del Discord que dejó el profesor pero en este trabajo, disculpenme por no haber usado todos los temas que nos han propiciado, traté de hacer lo que yo sabía hacer.
+Me limité a por ejemplo, utilizar unicamente la paleta de colores que han dado (mitad de camino me enteré que se podían usar otros), a una tipo de tipografía, etc. Hice lo posible para cumplir todas las pautas del trabajo, hasta incluso hice un boquejo a mano para ponerle mas onda adjunto pruebas: "sketch form.jpeg" y "sketch index.jpeg".
+
+Con el tema del formulario, la hice más fácil y ya estoy viendo que me van a retar, porque sinceramente mucho no lo trabajé. Lo customicé, investigué como aplicarlo y listo, quedó bonito. Pero bueno, hay una barra abajo de publicidad molesta.
+
+Hay ciertos detalles que si me hubiesen gustado haberlos hechos mejor, pero en parte descubrí que no quería tardar tanto tiempo en perfeccionar cierta seccción para no dejar las otras atrás y en parte porque era necesario Javascript. Soy muy perfeccionista y sé que esta página se puede mejorar un montón.
+
+Otra cuestión, es que las imagenes cumplen las pautas, tanto el formato como lugar donde las saqué (unsplash, pixabay), lo realicé con un poco de de ayuda de mi amigo Juan pero ustedes (si es que esto no lo lee uno persona) lo conocen como ChatGPT, muy piola. Me inspiré para hacer la página en (celeones, colegio ESSERI, y en algunas del diario, como por ejemplo, Diario Clarín para ciertas cosas). Y bueno eso, nada más. Disculpen o disculpame por tanto texto.
+
+PD: los profes me caen muy bien, me dan ganas de aprender. Este sentimiento ni siquiera lo provoca mi carrera (Lic. en Psicología) y eso que a mi me encanta la Psicología. Si bien siempre me gustó todo lo que tenga que ver con PC, jueguitos, tecnología, internet, es increíble las ganas de programar que me dan las clases. Posta que gracias, bueno trabajo!
