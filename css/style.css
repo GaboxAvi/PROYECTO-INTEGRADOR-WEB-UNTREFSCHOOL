@@ -168,7 +168,7 @@ main .encabezado{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
 }
 
@@ -176,7 +176,7 @@ main .encabezado{
 /* Características de la imágen de equipo */
 .equipo article img{
     padding-top: 30px;
-    height: 20rem;
+    height: 18rem;
     border-radius: 100%;
 }
 
@@ -251,9 +251,9 @@ main .encabezado{
 /* Disposición de imágenes */
 .propuestas{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
     padding-bottom: 20px;
 }
   
@@ -349,16 +349,15 @@ main .encabezado{
 /* Disposición del contenedor artículos */
 .novedad{
     position: relative;
-    max-width: 600px;
     margin: 0 auto;
     padding-bottom: 35px;
 }
 
 
 /* Salida de img cursor hover */
-.novedad img:hover{
-    transform: scale(0.9);
-    filter: grayscale(0.5);
+.novedad:hover{
+    text-decoration: underline var(--background-primary);
+    filter: grayscale(0.8);
     transition: all 0.6s;
 }
 
@@ -394,7 +393,7 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     padding: 20px;
-    align-items: center;
+    gap: 30px;
 }
 
 
@@ -406,14 +405,8 @@ footer section{
 }
 
 
-/* padding */
-footer section div{
-    padding-top: 10px;
-}
-
-
 /* Carac. títulos */
-footer h3{
+.titulo{
     margin: 0;
     padding: 10px 0;
     color: var(--background-secondary);
@@ -446,6 +439,7 @@ footer h3{
 
 /* Ocupamiento de Maps */
 #ubicacion iframe{
+    padding-top: 15px;
     width:100%;
     height:200px;
     border: none;
@@ -479,4 +473,74 @@ footer a{
 footer a:hover{
     color: var(--details-color);
     transition: all 0.3s
+}
+
+
+
+@media (min-width: 768px) {
+    
+    /* Display sección novedades */
+#novedades .novedades{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* Tamaño de novedad */
+.novedad{
+    max-width: 30%;
+}
+
+
+/* Tamaño título */
+.novedad h3{
+    font-size: 1.1rem;
+}
+
+/* padding footer */
+.titulo{
+    padding-bottom: 20px;
+}
+
+
+/* Display íconos sección "Redes Sociales" */
+#redesSociales{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 30px;
+}
+
+
+/* padding footer ubicación */
+#ubicacion iframe{
+    padding-top: 0;
+}
+
+
+/* Alineación de contenido footer */
+.contenidoFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* Display de "CONTACTO" */
+.contenidoFooter:last-child div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/* Espacio entre sus elementos */
+#contactos{
+    padding-top: 20px;
+    padding: 10px;
+}
 }

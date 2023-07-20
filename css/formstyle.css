@@ -144,7 +144,7 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     padding: 20px;
-    align-items: center;
+    gap: 30px;
 }
 
 
@@ -156,14 +156,9 @@ footer section{
 }
 
 
-/* padding */
-footer section div{
-    padding-top: 10px;
-}
-
 
 /* Carac. títulos */
-footer h3{
+.titulo{
     margin: 0;
     padding: 10px 0;
     color: var(--background-secondary);
@@ -196,6 +191,7 @@ footer h3{
 
 /* Ocupamiento de Maps */
 #ubicacion iframe{
+    padding-top: 15px;
     width:100%;
     height:200px;
     border: none;
@@ -229,4 +225,74 @@ footer a{
 footer a:hover{
     color: var(--details-color);
     transition: all 0.3s;
+}
+
+
+
+@media (min-width: 768px) {
+    
+    /* Display sección novedades */
+#novedades .novedades{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* Tamaño de novedad */
+.novedad{
+    max-width: 30%;
+}
+
+
+/* Tamaño título */
+.novedad h3{
+    font-size: 1.1rem;
+}
+
+/* padding footer */
+.titulo{
+    padding-bottom: 20px;
+}
+
+
+/* Display íconos sección "Redes Sociales" */
+#redesSociales{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 30px;
+}
+
+
+/* padding footer ubicación */
+#ubicacion iframe{
+    padding-top: 0;
+}
+
+
+/* Alineación de contenido footer */
+.contenidoFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* Display de "CONTACTO" */
+.contenidoFooter:last-child div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/* Espacio entre sus elementos */
+#contactos{
+    padding-top: 20px;
+    padding: 10px;
+}
 }
